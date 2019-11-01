@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <title>Green Tech World</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <link rel="stylesheet" type="text/css" href="frontend.css" />
+  <link rel="icon" href="images/icon.ico">
+  <link rel="stylesheet" type="text/css" href="signup.css">
+  <script type="text/javascript" src="jquery.js"></script>
+  <script type="text/javascript" src="declarativeToggle.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Bree+Serif|Montserrat|Sacramento&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <!--This is website menu section with navigations -->
+    <div class="headermenu">
+      <nav class="navbar">
+        <img src="images/gtworld.png" alt="gtworld logo">
+        <input type="" class="mysearchbar" name="q" size="20" placeholder="search web...">
+        <input type="" value="search" size="3" class="mysearchbutton">
+        <ul class="mymenu">
+          <li class="drop">
+          <a href="javascript:void(0)">Menu</a>
+          <div class="drop-content">
+          <a href="index.html">Home</a>
+          <a href="blog.html">Blog</a>
+          <a href="media.html">Media</a>
+          <a href="signup.html">Signup</a>
+          <a href="login.html">Login</a>
+          <a href="contact.html">Contact</a>
+          <a href="about.html">About</a>
+          </div></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li class="drop">
+          <a href="javascript:void(0)">Media</a>
+          <div class="drop-content">
+          <a href="MEDIA.html">Video</a>
+          <a href="MEDIA.html">Audio</a>
+          <a href="MEDIA.html">Photos</a>
+          <a href="MEDIA.html">Slides</a>
+          </div></li>
+          <li><a href="signup.html">Signup</a></li>
+          <li><a href="login.html" class="active">Login</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+      <span data-toggle-target = ".navbar" class="toggle-btn">
+          <img src="images/menu.png" alt="menu toggle button">
+        </span>
+    </div>
+    <script type="text/javascript" src="pro3.js"></script>
+  </header>
+      <div class="site-container">
+
+        <div class="login-header">
+          <h1>Login</h1>
+        
+          <div class="welcome">
+             <form id="loginform" action="media.html" method="post" enctype="multipart/form-data" >
+
+              <h2> Sign in </h2>
+                <div class="row">
+                  <label for="email"> Your email </label><br />
+                  <input id="email" class="input" name="email" type="email" required placeholder="   email@domain.com"/>
+                </div>
+                <div class="row">
+                  <label for="password"> Password </label><br />
+                  <input id="password" class="input" name="password" type="password" required placeholder="    **********"/>
+                </div>
+                <p class="keeplogin">
+                  <input type="checkbox" name="keep" id="keep" value="keep" />
+                  <label for="keep"> Keep me logged in </label>
+                </p>
+                <p class="recoverpassword">
+                <a href="#resetpassword"> forgot password </a>
+                </p>
+                <input id="submit_button" type="submit" value="Login" />
+                <p class="join">
+                  <label for="new_member"> Not yet a member? </label>
+                  <a href="signup.html">Register</a>
+                </p>
+
+             </form>
+          </div>
+          </div>
+
+        <footer>
+         <div class="bottom-site">
+          <a class="footer-link" href="https://www.facebook.com/">Facebook</a>
+          <a class="footer-link" href="https://twitter.com/">Twitter</a>
+          <a class="footer-link" href="http://www.gstevewall.com/">Website</a>
+          <p class="copyright"> &copy; 2020 Ejike IfeanyiChukwu @ Gstevewall Academy.</p>
+         </div>
+      </footer>
+    </div>
+</body>
+
+</html>

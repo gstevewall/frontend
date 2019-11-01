@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <title>Front-End Developers</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <link rel="stylesheet" type="text/css" href="frontend.css" />
+  <link rel="stylesheet" type="text/css" href="popup.css">
+  <link rel="icon" href="images/icon.ico">
+  <script type="text/javascript" src="jquery.js"></script>
+  <script type="text/javascript" src="declarativeToggle.js"></script>
+  <script type="text/javascript" src="frontend.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Bree+Serif|Montserrat|Sacramento&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <!--This is website menu section with navigations -->
+    <div class="headermenu">
+      <nav class="navbar">
+        <img src="images/gtworld.png" alt="gtworld logo">
+        <input type="" class="mysearchbar hide-box" name="q" size="20" placeholder="search web...">
+        <input type="" value="search hide-box" size="2.5" class="mysearchbutton">
+        <ul class="mymenu">
+           <li class="drop">
+          <a href="javascript:void(0)" class="active">Menu</a>
+          <div class="drop-content">
+          <a href="index.html">Home</a>
+          <a href="blog.html">Blog</a>
+          <a href="media.html">Media</a>
+          <a href="signup.html">Signup</a>
+          <a href="login.html">Login</a>
+          <a href="contact.html">Contact</a>
+          <a href="about.html">About</a>
+          </div></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li class="drop">
+          <a href="javascript:void(0)">Media</a>
+          <div class="drop-content">
+          <a href="MEDIA.html">Video</a>
+          <a href="MEDIA.html">Audio</a>
+          <a href="MEDIA.html">Photos</a>
+          <a href="MEDIA.html">Slides</a>
+          </div></li>
+          <li><a href="signup.html">Signup</a></li>
+          <li><a href="login.html">Login</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+      <span data-toggle-target = ".navbar" class="toggle-btn">
+          <img src="images/menu.png" alt="menu toggle button">
+        </span>
+    </div>
+  </header>
+     <div class="site-container">
+     	   <div class="top-site">
+		       <h1>Front-End Developers</h1>
+		       <h2 class="header1">We build awesome designs... Join us today!</h2>
+		       <img src="images/earth.png" alt="gtworld earth" class="green-earth clear">
+	       </div>
+		   <div class="middle-site">
+              <div class="first-middle-site">
+              	<img src="images/bird.gif" alt="">
+		        <h2>Peaceful Developers</h2>
+		        <p class="peace-developers">Lorem ipsum dolor sit amet, vitae volutpat, dui conubia, dolor urna. Non auctor, montes nulla distinctio.</p>
+              </div>
+              <hr>
+              <div class="second-middle-site">
+              	<h2>Our Services</h2>
+              	<div class="our-services">
+                  <img class="service-1-img" src="images/work1.png" alt="">
+                  <h3>Template Design</h3>
+                  <p>Lorem ipsum dolor sit amet, quis in duis, iaculis id felis. Consectetuer vestibulum, nunc urna lectus, erat ligula. Hendrerit nam, lectus ante, ut lorem eros.</p>
+              	</div>
+              	<div class="our-services">
+              	  <img class="service-2-img" src="images/work2.png" alt="">
+              	  <h3>Web Development</h3>
+              	  <p>Lorem ipsum dolor sit amet, mauris sed consectetuer. Etiam et eu, bibendum interdum, lacus quis mauris. Curabitur wisi, quisque vel eu, rutrum nam.</p>
+              	</div>
+              </div>
+              <hr>
+              <div class="third-middle-site">
+              	<h2>Need our services?</h2>
+              	<h3>Hit the contact box and drop us a message!</h3>
+              	<p class="contact-message">Lorem ipsum dolor sit amet, in quis, aenean amet. Phasellus sodales, tellus donec dui, ornare erat.</p>
+              <!--<a class="myButton" href="mailto:name@email.com">Contact Us</a> -->
+              </div>
+	       </div>
+
+         <!-- Laveraging JavaScript -->
+
+          <div class="MyPop" style="overflow:hidden;">
+            <div id="abc" >
+            <!-- Popup Div Starts Here -->
+            <div id="popupContact">
+            <!-- Contact Us Form -->
+            <form action="#" id="form" method="post" name="form">
+            <img id="close" src="images/icon1.png" onclick ="div_hide()">
+            <h2>Contact Us</h2>
+            <hr>
+            <input id="name" name="name" placeholder="Name" type="text">
+            <input id="email" name="email" placeholder="Email" type="email">
+            <textarea id="msg" name="message" placeholder="Message"></textarea>
+            <a href="javascript:check_empty()" id="submit">Send</a>
+            </form>
+            </div>
+            <!-- Popup Div Ends Here -->
+            </div>
+            <!-- Display Popup Button -->
+            <a class="myButton" id="popup" onclick="div_show()">Contact Us</a>
+
+         <!-- End of Popup Message -->
+
+
+	       <div class="bottom-site">
+	          <div class="bottom-content">
+             <a class="footer-link" href="https://www.facebook.com/">Facebook</a>
+                <a class="footer-link" href="https://twitter.com/">Twitter</a>
+                <a class="footer-link" href="http://www.gstevewall.com/">Website</a>
+                <p class="copyright"> &copy; 2020 Ejike IfeanyiChukwu @ Gstevewall Academy.</p>
+            </div>
+	       </div>
+	 </div>
+  <footer>
+
+  </footer>
+</body>
+
+</html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <title>Front-End Developers</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <link rel="stylesheet" type="text/css" href="frontend.css" />
+  <link rel="stylesheet" type="text/css" href="media.css" />
+  <link rel="stylesheet" type="text/css" href="lightbox.css">
+  <link rel="icon" href="images/icon.ico">
+  <script type="text/javascript" src="frontend.js"></script>
+  <script type="text/javascript" src="jquery.js"></script>
+  <script type="text/javascript" src="declarativeToggle.js"></script>
+  <script type="text/javascript" src="lightbox.min.js"></script>
+  <script type="text/javascript" src="cycle2.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Bree+Serif|Montserrat|Sacramento&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <!--This is website menu section with navigations -->
+    <div class="headermenu">
+      <nav class="navbar">
+        <img src="images/gtworld.png" alt="gtworld logo">
+        <input type="" class="mysearchbar" name="q" size="20" placeholder="search web...">
+        <input type="" value="search" size="3" class="mysearchbutton">
+        <ul class="mymenu">
+           <li class="drop">
+          <a href="javascript:void(0)">Menu</a>
+          <div class="drop-content">
+          <a href="index.html">Home</a>
+          <a href="blog.html">Blog</a>
+          <a href="media.html">Media</a>
+          <a href="signup.html">Signup</a>
+          <a href="login.html">Login</a>
+          <a href="contact.html">Contact</a>
+          <a href="about.html">About</a>
+          </div></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li class="drop">
+          <a href="javascript:void(0)" class="active">Media</a>
+          <div class="drop-content">
+          <a href="MEDIA.html">Video</a>
+          <a href="MEDIA.html">Audio</a>
+          <a href="MEDIA.html">Photos</a>
+          <a href="MEDIA.html">Slides</a>
+          </div></li>
+          <li><a href="signup.html">Signup</a></li>
+          <li><a href="login.html">Login</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+      <span data-toggle-target = ".navbar" class="toggle-btn">
+          <img src="images/menu.png" alt="menu toggle button">
+        </span>
+    </div>
+    <script type="text/javascript" src="pro3.js"></script>
+  </header>
+     <div class="site-container">
+        <div class="media-header">
+           <h1>Best Cinema Gallery</h1>
+           <h2 class="hide-small">Have fun & entertain yourself...</h2>
+         </div>
+        <div class="media-container">
+
+        <div class="cycle-slideshow clear" data-cycle-slides=".slide" data-cycle-pause-on-hover="true">
+
+          <span class="cycle-prev"><img src="images/prev.png"></span>
+          <span class="cycle-next"><img src="images/next.png"></span>
+          <span class="cycle-pager"></span>
+
+          <div class="slide">
+            <img src="images/FrontEndSlid.png" alt="First Flower">
+          </div>
+
+          <div class="slide">
+            <img src="images/FrontEndSlid1.png" alt="Second Flower">
+          </div>
+
+          <div class="slide">
+            <img src="images/FrontEndSlid2.png" alt="First Bird ">
+          </div>
+
+          <div class="slide">
+            <img src="images/FrontEndSlid3.png" alt="Third Flower">
+          </div>
+
+          <div class="slide">
+            <img src="images/FrontEndSlid4.png" alt="Second Bird">
+          </div>
+        </div>
+
+           <h1>Photo Gallery 1</h1>
+          <div class="thumbnails">
+            <a href="images/Aeroplane.png" data-lightbox="gallery" data-title="Aeroplane"><img src="images/Aeroplane-thumb.png"></a>
+            <a href="images/Bike.png" data-lightbox="gallery" data-title="Bike"><img src="images/Bike-thumb.png"></a>
+            <a href="images/Car.png" data-lightbox="gallery" data-title="Car"><img src="images/Car-thumb.png"></a>
+            <a href="images/Purple-Tree.png" data-lightbox="gallery" data-title="Purple Tree"><img src="images/Purple-Tree-thumb.png"></a>
+            <a href="images/Puppy.png" data-lightbox="gallery" data-title="Puppy"><img src="images/Puppy-thumb.png"></a>
+            <a href="images/Parrot.png" data-lightbox="gallery" data-title="Parrot"><img src="images/Parrot-thumb.png"></a>
+            <a href="images/YellowFish.png" data-lightbox="gallery" data-title="YellowFish"><img src="images/YellowFish-thumb.png"></a>
+            <a href="images/Water.png" data-lightbox="gallery" data-title="Water"><img src="images/Water-thumb.png"></a>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Et netus et malesuada fames ac. Aliquam purus sit amet luctus venenatis lectus magna fringilla. Eget felis eget nunc lobortis mattis aliquam faucibus purus. Vestibulum lectus mauris ultrices eros in. Dolor sit amet consectetur adipiscing elit pellentesque. Id diam maecenas ultricies mi.</p>
+
+            <h1>Embedded Video</h1>
+            <div class="watch">
+              <video src="videos/DJ-Techno.mp4" controls poster="videos/cover.jpg">
+                Your browser does not support this video element. Thank you...
+              </video>
+            </div>
+            <p>Suspendisse in est ante in nibh mauris cursus. Nisl purus in mollis nunc sed id semper. Tincidunt praesent semper feugiat nibh sed pulvinar proin. Ultricies mi quis hendrerit dolor magna eget. Odio aenean sed adipiscing diam donec adipiscing tristique. Fermentum et sollicitudin ac orci phasellus egestas.</p> 
+
+            <h1>Embedded Audio</h1>
+            <div class="audio">
+              <a onclick="playclip();">
+                <img src="audios/Audio.jpg" class="imgaudio" alt="audio-cover">
+              </a>
+              <audio controls class="mp3">
+              <source src="audios/Jingle-Bells.mp3">
+              Your browser does not support the audio element...
+              </audio>
+            </div>
+
+            <p>Mattis aliquam faucibus purus in massa tempor nec feugiat nisl. Penatibus et magnis dis parturient montes nascetur ridiculus. Sodales neque sodales ut etiam. Tempus egestas sed sed risus pretium quam. Vulputate eu scelerisque felis imperdiet. Euismod in pellentesque massa placerat duis ultricies lacus sed turpis.</p>
+
+            <h1>Photo Gallery 2</h1>
+            <div class="photo-gallery">
+              <div class="photo-thumbnails">
+                <img onmouseover="preview.src=Flower.src" name="Flower" src="images/Flower.png" alt="Flower">
+                <img onmouseover="preview.src=Love.src" name="Love" src="images/Love.png" alt="Love">
+                <img onmouseover="preview.src=Nature.src" name="Nature" src="images/Nature.png" alt="Nature">
+                <img onmouseover="preview.src=Palm.src" name="Palm" src="images/Palm.png" alt="Palm">
+              </div>
+
+              <div class="preview">
+                <img name="preview" src="images/Flower.png" alt="Flower">
+              </div>
+            </div>
+
+            <h1>Read More...</h1>
+            Accumsan sit amet nulla facilisi morbi tempus iaculis urna. Nisl pretium fusce id velit ut tortor pretium. Porttitor massa id neque aliquam. Aliquam ultrices sagittis orci a scelerisque purus semper. Turpis egestas integer eget aliquet nibh praesent. Quam nulla porttitor massa id neque aliquam. Mauris in aliquam sem fringilla ut. Lectus urna duis convallis convallis tellus id interdum velit laoreet. Nulla pharetra diam sit amet nisl. Mauris augue neque gravida in fermentum et sollicitudin ac orci.
+
+            Amet cursus sit amet dictum sit amet justo. Risus nec feugiat in fermentum posuere urna. Congue mauris rhoncus aenean vel elit scelerisque mauris pellentesque pulvinar. Vitae suscipit tellus mauris a diam. Consectetur a erat nam at lectus urna duis. Mauris vitae ultricies leo integer malesuada nunc. Risus commodo viverra maecenas accumsan lacus. Risus at ultrices mi tempus imperdiet. Varius quam quisque id diam vel quam elementum pulvinar. In ante metus dictum at tempor commodo. Amet purus gravida quis blandit turpis cursus in hac habitasse. Aliquam ultrices sagittis orci a scelerisque.
+
+          <h1>CSS Stripes</h1>
+          <nav class="str">
+            <ul class="mystr">
+              <li class="home hide-small"><a href="#">Home</a></li>
+              <li class="chat hide-small"><a href="#">Chat</a></li>
+              <li class="mail hide-small"><a href="#">Email</a></li>
+              <li class="phone hide-small"><a href="#">Phone</a></li>
+            </ul>
+           </nav>
+          </p>
+        </div>
+
+      <div class="bottom-site">
+            <a class="footer-link" href="https://www.facebook.com/">Facebook</a>
+                <a class="footer-link" href="https://twitter.com/">Twitter</a>
+                <a class="footer-link" href="http://www.gstevewall.com/">Website</a>
+                <p class="copyright"> &copy; 2020 Ejike IfeanyiChukwu @ Gstevewall Academy.</p>
+         </div>
+   </div>
+</body>
+</html>

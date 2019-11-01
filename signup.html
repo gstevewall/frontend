@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <title>Green Tech World</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <link rel="stylesheet" type="text/css" href="frontend.css" />
+  <link rel="stylesheet" type="text/css" href="signup.css">
+  <link rel="icon" href="images/icon.ico">
+  <script type="text/javascript" src="jquery.js"></script>
+  <script type="text/javascript" src="declarativeToggle.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Bree+Serif|Montserrat|Sacramento&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <!--This is website menu section with navigations -->
+    <div class="headermenu">
+      <nav class="navbar">
+        <img src="images/gtworld.png" alt="gtworld logo">
+        <input type="" class="mysearchbar" name="q" size="20" placeholder="search web...">
+        <input type="" value="search" size="3" class="mysearchbutton">
+        <ul class="mymenu">
+          <li class="drop">
+          <a href="javascript:void(0)">Menu</a>
+          <div class="drop-content">
+          <a href="index.html">Home</a>
+          <a href="blog.html">Blog</a>
+          <a href="media.html">Media</a>
+          <a href="signup.html">Signup</a>
+          <a href="login.html">Login</a>
+          <a href="contact.html">Contact</a>
+          <a href="about.html">About</a>
+          </div></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li class="drop">
+          <a href="javascript:void(0)">Media</a>
+          <div class="drop-content">
+          <a href="MEDIA.html">Video</a>
+          <a href="MEDIA.html">Audio</a>
+          <a href="MEDIA.html">Photos</a>
+          <a href="MEDIA.html">Slides</a>
+          </div></li>
+          <li><a href="signup.html" class="active">Signup</a></li>
+          <li><a href="login.html">Login</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+      <span data-toggle-target = ".navbar" class="toggle-btn">
+          <img src="images/menu.png" alt="menu toggle button">
+        </span>
+    </div>
+    <script type="text/javascript" src="pro3.js"></script>
+  </header>
+
+  <div class="site-container">
+
+    <div class="signup-header">
+      <h1>Signup</h1>
+    </div>
+      <div id="register" class="Regform">
+        <form id="Reg" action="login.html" method="post" enctype="multipart/form-data">
+          <h2>Already a member? 
+            <a href="login.html">Login</a>
+          </h2>
+          <p>
+             <label for="firstname" class="fname"> First Name </label>
+             <input id="name" name="firstname" type="text" required="required" placeholder="Hello"/>
+          </p>
+          <p>
+            <label for="lastname" class="lname"> Last Name </label>
+            <input id="name" name="lastname" type="text" required="required" placeholder="World"/>
+         </p>
+         <p>
+           <label for="emailsignup" class="mail"> Your email </label>
+           <input id="email" name="emailsignup" type="email" required="required" placeholder="email@domain.com"/>
+         </p>
+         <p>
+           <label for="passwordsignup" class="passwd"> Password </label>
+           <input id="password" name="passwordsignup" type="password" required="required" placeholder="**********" min="8"/>
+         </p>
+         <p>
+           <label for="passwordsignup_comfirm" class="passwd"> Confirm </label>
+           <input id="passwordsignup_comfirm" name="passwordsignup_comfirm" type="password" required="required" placeholder="**********"/>
+         </p>
+         <p>
+           <label for="country"> Country </label>
+           <select id="country" name="country">
+           <option value="nigeria"> Nigeria </option>
+           <option value="canada"> Canada </option>
+           <option value="usa"> USA </option>
+          </select>
+         </p>
+         <p>
+           <label for="age" class="birth"> Birth Day </label>
+           <input type="date" name="DOB" required="required"/>
+         </p>
+         <p>
+          <label for="course" class="learn"> Course: </label>
+          <input type="checkbox" name="course1" value="java">Java
+          <input type="checkbox" name="course2" value="mikro c">mikro C
+          <input type="checkbox" name="course3" value="arduino">Arduino
+         </p>
+         <p>
+          <label for="sex" class="robot"> Gender: </label>
+          <input type="radio" name="gender" value="male" checked> Male
+          <input type="radio" name="gender" value="female"> Female
+          <input type="radio" name="gender" value="other"> Other
+         </p>
+          <p class="signin button">
+          <input type="submit" value="Sign up" />
+         </p>
+         </form>         
+      </div>
+      
+    <footer>
+     <div class="bottom-site">
+            <a class="footer-link" href="https://www.facebook.com/">Facebook</a>
+                <a class="footer-link" href="https://twitter.com/">Twitter</a>
+                <a class="footer-link" href="http://www.gstevewall.com/">Website</a>
+                <p class="copyright"> &copy; 2020 Ejike IfeanyiChukwu @ Gstevewall Academy.</p>
+         </div>
+  </footer>
+  </div>
+
+</body>
+
+</html>
